@@ -1,0 +1,675 @@
+/*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #ccc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #ccc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body{
+	background:url('../media/img/sfr_bg-texture.jpg') top center;	
+	background-repeat: repeat-y;
+	background-size: cover;
+	font-family: 'NobelRegular', Arial, Helvetica, sans-serif; font-weight:normal;
+	color:#fdf3f1;
+}
+
+	.wrapper{
+		width:100%;
+		position:relative;
+		
+	}
+		nav{
+			width:100%;
+			height:auto;
+			z-index:100;
+			display:block;
+			position:fixed;
+			top:0;
+		}
+		
+		#header{
+			display:block;
+			position:fixed;
+			height:236px;
+		}
+		
+		.header_nav{
+			margin:0 auto;
+			display:block;
+			width:396px;
+			position:relative;
+			margin-top:10px;
+		    -webkit-transition:all .5s ease-in-out;
+		    transition:all .5s ease-in-out;
+			
+		}
+		
+			.logo{
+				display:block;
+			}
+			
+		.links-container{
+			}	
+
+			nav ul{
+			    font-size: 20px;
+			    font-family: 'NobelRegular', Arial, Helvetica, sans-serif;
+			    text-transform: uppercase;
+			    display: block;
+			    width: 515px;
+			    margin: 25px auto;
+			    color: #fdf3f1;
+			}
+			
+			nav ul li{
+				display:inline-block;
+			}
+			nav ul li a{
+				color:#fdf3f1;
+				margin: 0 10px;
+				text-decoration:none;
+				border-bottom: 0px solid #fdf3f1;
+			    -webkit-transition:all .2s ease-in-out;
+			    transition:all .2s ease-in-out;
+			}
+			
+			nav ul li a:hover{
+				color:#fdf3f1;
+				margin: 0 10px;
+				text-decoration:none;
+				border-bottom: 2px solid #fdf3f1;
+			}
+			
+			.navActive{
+				border-bottom: 2px solid #fdf3f1;
+			}
+
+			
+		#home{
+			display:block;
+			z-index:20;
+		}
+			.featured{
+				width:918px;
+				height:612px;
+				margin: 0 auto;
+				box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.23);
+				box-sizing: border-box;
+				position: relative;
+				text-align: center;
+			}
+			
+				.featured-message{
+					position:absolute;
+					bottom:70px;
+					left:0;
+					right:0;
+					margin:0 auto;
+					width:50%;
+					z-index:10;
+					color:#ffe2ab;
+					font-size:20px;
+				    line-height: 22px;
+				}
+				
+				.featured-message a, .featured-message a:visited{
+					text-decoration:underline;
+					color:#ffe2ab;
+				    -webkit-transition:all .2s ease-in-out;
+				    transition:all .2s ease-in-out;
+				}
+				
+				.featured-message a:hover {
+					color:#554c6e;
+				}
+				
+				
+				.featured-light{
+					font-size:16px ;
+					font-family: 'NobelLight', Arial, Helvetica, sans-serif; 
+					font-weight:normal;
+				}
+				
+				.featured img{
+					z-index:9;
+				}
+
+			#about{
+				display:block;
+				z-index:20;
+			}
+				
+			.about-text{
+				width: 675px;
+				background: url('../media/img/sfr_paper-texture.jpg') repeat ;
+				border-bottom: 1px solid #c8c1ba;
+				border-left:1px solid #c8c1ba;
+				border-top:1px solid #fdf9f5;
+				border-right:1px solid #fdf9f5;
+				box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.23);
+				margin: 0 auto;
+				color:#000000;
+				z-index:9;
+				text-align:center;
+				position:relative;
+				margin-top:160px;
+			}
+				.about-text p{
+					font-size:20px;
+					padding:30px 90px;
+					font-family: 'NobelLight', Arial, Helvetica, sans-serif; font-weight:normal;
+				}
+			
+			
+			.about-images{
+				z-index:8;
+				position:relative;
+				margin:0 auto;
+				display:block;
+				text-align:center;
+				width: 100%;
+				top: -30px;
+			}
+				
+				.about-images img{
+					zoom: 1;
+					filter: alpha(opacity=100);
+					opacity: 1.0;
+				    -webkit-transition:all .2s ease-in-out;
+				    transition:all .2s ease-in-out;
+					cursor:pointer;
+					
+				}
+				
+				.about-images img:hover{
+					zoom: 1;
+					filter: alpha(opacity=60);
+					opacity: .6;
+					
+				}
+				
+					.row1 img{
+						max-height:310px;
+						position:relative;
+					}
+					
+					
+				
+					.row2 img{
+						position:relative;
+						max-height:250px;
+						height:250px;
+					}
+					
+			
+			#music{
+				width: 100%;
+				display:block;
+				z-index:20;
+			}		
+			
+				#music iframe{
+					border: 0; width: 700px; height: 210px;
+					margin:0 auto;
+					display: block;
+					margin-top:160px;
+				}
+			
+			#shows{
+				margin:0 auto;
+				display: block;
+				margin-top:160px;
+				width:960px;
+			}
+			
+			
+			#bit-events {
+				font-family: 'NobelLight', Arial, Helvetica, sans-serif; font-weight:normal !important;
+				font-size: 16px !important;
+			}
+			
+				.bit-invert{ 
+					background-color: black !important; 
+					color:#fdf3f1 !important;
+					font-family: 'NobelRegular', Arial, Helvetica, sans-serif; font-weight:normal !important;
+				}
+				.bit-notify{
+					color: #fdf3f1 !important;
+					font-family: 'NobelLight', Arial, Helvetica, sans-serif; font-weight:normal !important;
+				}
+			
+				#bit-events a.bit-track-artist-header {
+				    border-top: 1px solid #e27e76 !important;
+				    border-bottom: 1px solid #e27e76 !important;
+				}
+				
+				#bit-events .bit-events td{
+					border-top: 1px solid #e27e76 !important;
+				}
+				
+				#bit-events tr.bit-header a, #bit-events tr.bit-header-narrow a{
+					color:#fdf3f1 !important;
+					
+				}
+				
+				#bit-events table {
+				  border-bottom: 1px solid #e27e76 !important;
+				}
+				
+				#bit-events td .bit-uiButtonDefault a{
+					color: #000 !important;
+				}
+				
+				
+					#bit-events tr.bit-header a:hover, #bit-events tr.bit-header-narrow a:hover{
+						color:#000 !important;
+					}
+				
+				#bit-events a{
+					color:#fdf3f1 !important;
+					font-family: 'NobelRegular', Arial, Helvetica, sans-serif; font-weight:normal !important;
+				}
+				
+					#bit-events a:hover{
+						color:#000 !important;
+					}
+					
+				td.bit-date {
+					  width: 70px !important;
+					}	
+					
+				#bit-events .bit-details-text a{
+					color:#000 !important;
+					
+				}	
+			
+			#contact{
+				font-family: 'NobelLight', Arial, Helvetica, sans-serif; font-weight:normal !important;
+				margin:0 auto;
+				display: block;
+				width:100%;
+				margin-top:160px;
+				background: url('../media/img/sfr_paper-texture.jpg') repeat ;
+				color:#000;
+				box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.23);
+				text-align:center;
+				z-index:20;
+			}
+			
+				#contact p{
+					font-size:20px;
+					padding:65px 0;
+				}
+			
+				#contact a{
+					color:#000;
+				    -webkit-transition:all .2s ease-in-out;
+				    transition:all .2s ease-in-out;
+				}
+			
+				#contact a:hover{
+					color:#6a6a6a;
+				}
+			
+			#social{
+				margin:0 auto;
+				display: block;
+				margin-top:150px;
+				margin-bottom:160px;
+				text-align:center;
+				font-size:20px;
+				z-index:20;
+			}
+			
+				#social a{
+					color:#fdf3f1;
+				    -webkit-transition:all .2s ease-in-out;
+				    transition:all .2s ease-in-out;
+					margin-right:10px;
+					font-family: 'NobelLight', Arial, Helvetica, sans-serif; font-weight:normal;
+				}
+			
+				#social a:hover{
+					color:#000;
+				}
+				
+				
+				.email-signup{
+					font-family: 'NobelLight', Arial, Helvetica, sans-serif; font-weight:normal;
+				}
+				
+				.form-field{
+					color:#000;
+					font-size:15px;
+					font-family: 'NobelLight', Arial, Helvetica, sans-serif; font-weight:normal;
+				}
+				
+				.form-submit{
+					font-family: 'NobelLight', Arial, Helvetica, sans-serif; font-weight:normal;
+				    font-weight: normal;
+				    background-color: #fff;
+				    border: 1px solid #999;
+				    padding: 2px 15px;
+					margin-left:5px;
+				    color: #000;
+				    font-size: 16px;
+				    -webkit-transition:all .2s ease-in-out;
+				    transition:all .2s ease-in-out;
+				}
+				
+					.form-submit:hover{
+					    background-color: #000;
+					    color:#fff;
+					    
+					}
+				
+				
+				
+				
+				.adrian{ color: #fff; font-size:14px; position: fixed;  bottom:5px; right:5px; font-family: 'NobelLight', Arial, Helvetica, sans-serif; font-weight:normal;}
+					.adrian:hover{color: #000;}	
+
+
+			/* ==|== font styles =====================================================
+			   Nobel
+			   ========================================================================== */
+
+				@font-face {
+					font-family: 'NobelLight';
+					src: url('../media/font/nobel-light-webfont.eot');
+					src: url('../media/font/nobel-light-webfont.eot?#iefix') format('embedded-opentype'),
+						 url('../media/font/nobel-light-webfont.woff') format('woff'),
+						 url('../media/font/nobel-light-webfont.ttf') format('truetype'),
+						 url('../media/font/nobel-light-webfont.svg#NobelLight') format('svg');
+					font-weight: normal;
+					font-style: normal;
+	
+				}
+	
+				@font-face {
+					font-family: 'NobelRegular';
+					src: url('../media/font/nobel-regular-webfont.eot');
+					src: url('../media/font/nobel-regular-webfont.eot?#iefix') format('embedded-opentype'),
+						 url('../media/font/nobel-regular-webfont.woff') format('woff'),
+						 url('../media/font/nobel-regular-webfont.ttf') format('truetype'),
+						 url('../media/font/nobel-regular-webfont.svg#NobelRegular') format('svg');
+					font-weight: normal;
+					font-style: normal;
+	
+				}
+
+
+				@font-face {
+				    font-family: 'nobelbold';
+				    src: url('../media/font/Nobel-Bold-webfont.eot');
+				    src: url('../media/font/Nobel-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+				         url('../media/font/Nobel-Bold-webfont.woff2') format('woff2'),
+				         url('../media/font/Nobel-Bold-webfont.woff') format('woff'),
+				         url('../media/font/Nobel-Bold-webfont.ttf') format('truetype'),
+				         url('../media/font/Nobel-Bold-webfont.svg#nobelbold') format('svg');
+				    font-weight: normal;
+				    font-style: normal;
+
+				}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
